@@ -10,6 +10,7 @@ import TopSlider from "./components/TopSlider";
 import ProductSection from "./components/ProductSliderC";
 import ProductCarousel from "./components/ProductSliderG";
 import About from "./components/About";
+import Special from "./components/Special";
 
 let array = [1, 2, 3];
 const products = [
@@ -122,7 +123,7 @@ function App() {
       <TopSlider />
       <Message />
       <ProductCarousel />
-      <About />
+
       <ItemsHeading
         heading="Moonclips"
         text="Bringing you the highest quality moon clips in the industry."
@@ -231,6 +232,8 @@ function App() {
           return <Item key={index} image={item.image} name={item.name} />;
         })}
       </HStack>
+      <About />
+      <Special />
     </div>
   );
 }

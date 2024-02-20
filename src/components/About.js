@@ -14,9 +14,11 @@ export default function About() {
       w={"full"}
       maxW={"1240px"}
       m={"auto"}
+      my={"16"}
       px={"0"}
       py={"4"}
       minH={"500px"}
+      bg="gray.100"
       direction={{ base: "column", md: "row" }}
     >
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
@@ -51,13 +53,17 @@ export default function About() {
           </Text>
         </Stack>
       </Flex>
-      <Flex flex={1}>
+      <Flex flex={1} overflow="hidden">
         <Image
           alt={"Login Image"}
           objectFit={"cover"}
           src={
-            "https://web.archive.org/web/20230521174951/https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            "https://tkcustom.com/cdn/shop/t/6/assets/custom_showcase4_img.jpg?v=160129236612641399891694796752"
           }
+          //   transform="skewY(5deg)"
+          //   rotate={"45deg"}
+          //   transform="skewY(10deg)"
+          transform="rotate(45deg)"
         />
       </Flex>
     </Stack>

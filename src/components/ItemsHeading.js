@@ -11,7 +11,7 @@ import {
 
 const ItemsHeading = ({ heading = "", text = "" }) => {
   return (
-    <Flex w={"full"} maxW={"1240px"} m={"auto"}>
+    <Flex w={"full"} maxW={"1240px"} m={"auto"} mt={"16"}>
       <HStack
         w={"full"}
         justify={"space-between"}
