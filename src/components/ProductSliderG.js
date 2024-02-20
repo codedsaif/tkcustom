@@ -97,13 +97,7 @@ function ProductCarousel() {
       rounded="md"
     >
       <Heading mb={4}>Featured Products</Heading>
-      <Flex
-        ref={slideRef}
-        overflowX="hidden"
-        scrollbarWidth="auto"
-        ms="-4px"
-        gap="20px"
-      >
+      <Flex ref={slideRef} overflowX="hidden" scrollbarWidth="auto" gap="20px">
         {products
           .slice(
             activeSlideIndex * visibleProducts,
@@ -145,20 +139,20 @@ function ProductCarousel() {
       </Flex>
       <Flex justifyContent="space-between" mt={4}>
         <Button
-          bg={"blue.400"}
+          bg={"gray.400"}
           rounded={"full"}
           color={"white"}
-          _hover={{ bg: "blue.500" }}
+          _hover={{ bg: "gray.500" }}
           onClick={handlePrevClick}
           disabled={activeSlideIndex === 0}
         >
           Prev
         </Button>
         <Button
-          bg={"blue.400"}
+          bg={"gray.400"}
           rounded={"full"}
           color={"white"}
-          _hover={{ bg: "blue.500" }}
+          _hover={{ bg: "gray.500" }}
           onClick={handleNextClick}
           disabled={activeSlideIndex === calculateSlidesCount() - 1}
         >
