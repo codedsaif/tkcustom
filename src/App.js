@@ -7,6 +7,8 @@ import { HStack } from "@chakra-ui/react";
 import React from "react";
 import ReactSlider from "./components/ReactSlider";
 import TopSlider from "./components/TopSlider";
+import ProductSection from "./components/ProductSliderC";
+import ProductCarousel from "./components/ProductSliderG";
 
 let array = [1, 2, 3];
 
@@ -16,6 +18,7 @@ function App() {
       <HeroSection />
       <TopSlider />
       <Message />
+      <ProductCarousel />
       <ItemsHeading
         heading="Moonclips"
         text="Bringing you the highest quality moon clips in the industry."
